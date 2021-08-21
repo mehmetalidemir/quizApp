@@ -19,7 +19,7 @@ class QuizBrain {
         'In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.',
         true),
     Question(
-        'the knight is the only piece in chess which can only move diagonally?',
+        'The knight is the only piece in chess which can only move diagonally?',
         false),
     Question(
         'The total surface area of two human lungs is approximately 70 square metres.',

@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey.shade900,
+        appBar: AppBar(
+          title: Center(child: Text('Quiz App')),
+          backgroundColor: Colors.indigo[700],
+        ),
+        backgroundColor: Colors.indigo[800],
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.0),
@@ -90,6 +94,8 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: FlatButton(
+              shape: new RoundedRectangleBorder(
+                  borderRadius: new BorderRadius.circular(90.0)),
               textColor: Colors.white,
               color: Colors.green,
               child: Text(
@@ -110,6 +116,8 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: FlatButton(
+              shape: new RoundedRectangleBorder(
+                  borderRadius: new BorderRadius.circular(90.0)),
               color: Colors.red,
               child: Text(
                 'False',
@@ -125,8 +133,11 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ),
-        Row(
-          children: scoreKeeper,
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            children: scoreKeeper,
+          ),
         )
       ],
     );
